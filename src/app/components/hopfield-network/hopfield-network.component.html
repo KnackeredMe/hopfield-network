@@ -1,0 +1,21 @@
+<h2>Enter pattern to recognize:</h2>
+<table>
+  <tr *ngFor="let column of inputPattern; index as i">
+    <td *ngFor="let cell of column; index as j" [ngStyle]="{background: cell > 0 ? '#000000' : '#FFFFFF'}" (click)="inputPattern[i][j] = -inputPattern[i][j]"></td>
+  </tr>
+</table>
+<h2>Result:</h2>
+<table>
+  <tr *ngFor="let column of outputPattern">
+    <td *ngFor="let cell of column" [ngStyle]="{background: cell > 0 ? '#000000' : '#FFFFFF'}"></td>
+  </tr>
+</table>
+<button type="button" (click)="recognize()">Recognize</button>
+<h2>Samples:</h2>
+<div class="patterns-wrapper">
+  <table *ngFor="let pattern of patterns">
+    <tr *ngFor="let column of pattern">
+      <td *ngFor="let cell of column" [ngStyle]="{background: cell > 0 ? '#000000' : '#FFFFFF'}"></td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,30 @@
+* {
+  font-family: "Apple SD Gothic Neo", sans-serif;
+}
+table {
+  border: 1px solid;
+  border-collapse: collapse;
+  margin: 20px;
+}
+
+td {
+  width: 20px;
+  height: 20px;
+}
+
+.patterns-wrapper {
+  display: flex;
+}
+
+button {
+  margin: 10px 20px;
+  border-radius: 4px;
+  background: #000000;
+  color: #FFFFFF;
+  width: 111px;
+  height: 40px;
+}
+
+h2 {
+  margin-left: 20px;
+}
